@@ -1,4 +1,8 @@
 class MooringsController < ApplicationController
+
+  def index
+  end
+
   def new
   end
 
@@ -10,4 +14,5 @@ class MooringsController < ApplicationController
 
   def destroy
   end
+
 end

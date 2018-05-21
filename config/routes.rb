@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'bookings/index'
+  get 'bookings/new'
+  get 'bookings/create'
+  get 'bookings/edit'
+  get 'bookings/destroy'
   get 'moorings/new'
   get 'moorings/create'
   get 'moorings/edit'
