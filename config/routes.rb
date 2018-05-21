@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
-  resources :bookings
-  resources :moorings, except:[:edit]
+  resources :bookings, except: [:edit]
+  resources :moorings, except: [:edit]
 
   devise_for :users
   root to: 'pages#home'
