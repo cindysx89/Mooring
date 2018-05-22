@@ -1,4 +1,11 @@
-<h1>HOMEPAGEEE</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<%= link_to "Log Out", destroy_user_session_path, method: :delete %>
+<div class="container">
+  <div class="form-wrapper">
+    <%= simple_form_for :search, method: "get" do |f| %>
+      <%= f.input :starts_at, as: :string, required: false, input_html: {class: "flatpickr"} %>
+      <%= f.input :ends_at, as: :string, required: false, input_html: {class: "flatpickr"} %>
+      <%= f.input :location %>
+      <%= f.input :price %><br>
+      <%= f.button :submit, "Go", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
