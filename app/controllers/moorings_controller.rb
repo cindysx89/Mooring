@@ -4,6 +4,10 @@ class MooringsController < ApplicationController
     @moorings = Mooring.all
   end
 
+  def show
+    @mooring = Mooring.find(params[:id])
+  end
+
   def new
     @mooring = Mooring.new
   end
