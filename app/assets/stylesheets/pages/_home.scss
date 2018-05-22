@@ -1,4 +1,12 @@
 // Specific CSS for your home-page
+body {
+  background-image: url(nathan-riley-288990-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 div.form-wrapper {
   width: 90%;
   margin: 0 auto;
@@ -7,4 +15,16 @@ div.form-wrapper {
 
 div.form-group {
   display: inline-block;
+}
+
+.btn-danger {
+  width: 200px;
+}
+
+.form-control-label {
+  color: white;
+}
+
+#search_starts_at, #search_ends_at {
+  background-color: white;
 }
