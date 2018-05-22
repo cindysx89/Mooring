@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="form-mooring">
+    <%= simple_form_for @mooring do |f| %>
+    <%= f.input :location, as: :string, required: false %><br>
+    <%= f.input :price, as: :string, required: false %> <br>
+    <%= f.button :submit, "Book", class: "btn btn-danger" %>
+    <% end %>
+  </div>
+</div>
