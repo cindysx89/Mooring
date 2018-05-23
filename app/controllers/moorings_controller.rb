@@ -16,7 +16,7 @@ class MooringsController < ApplicationController
   def create
     @mooring = Mooring.new(mooring_params)
     @mooring.user = current_user
-     if @mooring.save!
+     if @mooring.save
       redirect_to moorings_path
     else
       render :new
