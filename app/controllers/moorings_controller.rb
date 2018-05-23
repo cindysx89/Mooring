@@ -13,8 +13,9 @@ class MooringsController < ApplicationController
   end
 
   def create
-    @mooring = Mooring.new
-     if @mooring.save
+    @mooring = Mooring.new(mooring_params)
+    @mooring.user = current_user
+     if @mooring.save!
       redirect_to moorings_path
     else
       render :new
@@ -26,5 +27,11 @@ class MooringsController < ApplicationController
     @mooring.destroy
   end
 
+
+private
+
+def mooring_params
+  params.require(:mooring).permit(:location, :price)
+end
 
 end
