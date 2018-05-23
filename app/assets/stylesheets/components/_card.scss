@@ -1,0 +1,26 @@
+div.container {
+  margin: 0 auto;
+  width: 850px;
+}
+
+div.card {
+  padding: 10px;
+  background-color: white;
+  width: 250px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.card-img-top {
+  width: 200px;
+  text-align: center;
+}
+
+.card-body {
+  margin: -40px 0 0 10px;
+  color: #f9f9f9;
+}
+
+p.card-text {
+  color: black;
+}
