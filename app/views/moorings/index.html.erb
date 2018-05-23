@@ -1,0 +1,17 @@
+<div class="container">
+
+
+<% @moorings.each do |mooring| %>
+
+<div class="card">
+
+<img class="card-img-top" src="http://tripstylist.co.uk/wp-content/uploads/2013/07/2013-05-04-16.08.12.jpg">
+<div class="card-body">
+    <h5 class="card-title"><%= mooring.location %></h5>
+    <p class="card-text">Price: <%= mooring.price %></p>
+  </div>
+</div>
+<% end %>
+
+
+</div>

@@ -8,4 +8,9 @@
 
 new_user = User.create(email: "evant@hey.com", password: "123456")
 mooring = Mooring.new(user: new_user, price: "12", location: "Angel")
+mooring = Mooring.new(user: new_user, price: "15", location: "Camden")
+mooring = Mooring.new(user: new_user, price: "11", location: "Hackney")
+mooring = Mooring.new(user: new_user, price: "13", location: "Bethnal Green")
+mooring = Mooring.new(user: new_user, price: "18", location: "Dalston")
+mooring = Mooring.new(user: new_user, price: "14", location: "Camden")
 mooring.save!
