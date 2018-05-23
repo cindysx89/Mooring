@@ -12,8 +12,11 @@
     <%= link_to "Create a Booking", root_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <%= link_to "Moorings", moorings_path, class: "navbar-wagon-item navbar-wagon-link" %>
 
-
-    <a href="" data-toggle="modal" data-target="#modalLoginForm">Sign In</a>
+    <% if user_signed_in? %>
+      <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+    <% else %>
+      <a href="" data-toggle="modal" data-target="#modalLoginForm">Sign In</a>
+    <% end %>
 
 
     <!-- Avatar with dropdown menu -->
