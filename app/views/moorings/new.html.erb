@@ -1,14 +1,17 @@
-<div class="container">
+<div class="banner2">
+
+<div class="container new-mooring">
 
     <h1>Create a Mooring</h1>
-    <h3>More moorings, more fun</h3>
 
     <%= form_for @mooring do |f|  %>
-    <%= f.label :location, "Enter location"  %>
-    <%= f.text_field :location %>
-    <%= f.label :price, "price"  %>
-    <%= f.text_field :price %>
-    <%= f.submit %>
+    <%= f.label :location, "Location"  %><br>
+    <%= f.text_field :location %><br>
+    <%= f.label :price, "Price"  %><br>
+    <%= f.text_field :price %><br><br>
+    <%= f.submit class: "btn btn-danger" %>
     <% end %>
 
 </dv>
+
+</div>
