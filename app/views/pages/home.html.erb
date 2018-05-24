@@ -3,11 +3,9 @@
     <%= simple_form_for :search, method: "get" do |f| %>
       <%= f.input :starts_at, as: :string, required: false, input_html: {class: "flatpickr"} %>
       <%= f.input :ends_at, as: :string, required: false, input_html: {class: "flatpickr"} %>
-      <%= f.input :location %>
-      <%= f.input :price %><br>
+      <%= f.input :location, collection: @moorings.all %>
       <%= f.button :submit, "SEARCH", class: "btn btn-danger" %>
     <% end %>
-
 
   </div>
 </div>
