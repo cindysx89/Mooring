@@ -6,6 +6,8 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+CLOUDINARY_URL: "cloudinary://945857378977752:sHFmO31gHPvtjmLHr9clKUdFuGs"
+
 module Rbnb
   class Application < Rails::Application
     config.generators do |generate|

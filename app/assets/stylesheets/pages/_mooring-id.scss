@@ -1,0 +1,43 @@
+div.container {
+  width: 900px;
+  margin-top: 30px;
+}
+
+div.mooring-image img {
+  float: left;
+  width: 50%;
+}
+
+div.mooring-details {
+  float: right;
+  width: 50%;
+  margin-bottom: 40px;
+  margin: auto;
+  vertical-align: middle;
+  height: 100%;
+  text-align: left;
+  padding-left: 10px
+}
+
+h2 {
+  font-weight: bold;
+  line-height: 10px;
+}
+
+#location {
+  margin-left: 50px;
+  font-size: 36px;
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+div #date-booker {
+  padding: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form-control-label {
+  color: black;
+}
+

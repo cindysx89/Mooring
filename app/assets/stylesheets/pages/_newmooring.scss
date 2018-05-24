@@ -1,11 +1,6 @@
-h1 {
+h1, h3 {
   text-align: center;
-  color: white;
-}
-
-h3 {
-  text-align: center;
-  color: white;
+  color: black;
 }
 
 #new_mooring {
@@ -13,5 +8,22 @@ h3 {
 }
 
 #new_mooring > label {
-  color: white;
+  color: black;
+}
+
+.banner2 {
+  background-image: image-url("nathan-riley-288990-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: calc(100vh - 70px);
+  width: 100vw;
+  overflow: hidden;
+  opacity: 0.2;
+}
+
+div.new-mooring {
+  opacity: 1;
+  z-index: 2;
 }
