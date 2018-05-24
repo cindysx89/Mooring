@@ -1,8 +1,9 @@
 <div class="container">
-  <ul>
-    <li><%= @mooring.location %></li>
-    <li><%= @mooring.price %></li>
-  </ul>
+
+    <h2><%= @mooring.location %></h2>
+    <h2><%= @mooring.price %></h2>
+
+
 
   <div class="form-wrapper">
     <%= simple_form_for [@mooring, @booking] do |f| %>
