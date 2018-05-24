@@ -4,4 +4,8 @@ class PagesController < ApplicationController
   def home
     @moorings = Mooring.all
   end
+
+  def dashboard
+    @bookings = Booking.where(user: current_user)
+  end
 end
