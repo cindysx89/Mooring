@@ -3,4 +3,9 @@ class Mooring < ApplicationRecord
   has_many :bookings
   validates :location, presence: true
   validates :price, presence: true
+
+  def name
+    location
+  end
+
 end

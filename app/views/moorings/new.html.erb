@@ -1,11 +1,11 @@
-<dv class="container">
+<div class="container">
 
     <h1>Create a Mooring</h1>
     <h3>More moorings, more fun</h3>
 
     <%= form_for @mooring do |f|  %>
     <%= f.label :location, "Enter location"  %>
-    <%= f.text_field :location %>
+    <%= f.label :location %>
     <%= f.label :price, "price"  %>
     <%= f.text_field :price %>
     <%= f.submit %>
