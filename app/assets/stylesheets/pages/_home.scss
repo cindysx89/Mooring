@@ -1,12 +1,32 @@
 // Specific CSS for your home-page
+
 body {
+  background-color: #dcf7e2;
+}
+
+div.banner {
   background-image: image-url("nathan-riley-288990-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
+  height: calc(100vh - 70px);
+  width: 100vw;
+  overflow: hidden;
+}
 
+div.banner h1 {
+  font-size: 120px;
+  opacity: 0.8;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+div.banner h2 {
+  font-size: 60px;
+  opacity: 0.9;
+  color: white;
 }
 
 div.form-wrapper {
