@@ -27,6 +27,7 @@ class MooringsController < ApplicationController
   def destroy
     @mooring = Mooring.find(params[:id])
     @mooring.destroy
+    redirect_to dashboard_path
   end
 
 

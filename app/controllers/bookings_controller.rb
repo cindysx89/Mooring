@@ -4,10 +4,6 @@ class BookingsController < ApplicationController
     @bookings = Booking.where(user: current_user)
   end
 
-  def show
-    @booking = booking.find(params[:id])
-  end
-
   def new
     @moorings = Mooring.all
     @booking = Booking.new
@@ -28,6 +24,7 @@ class BookingsController < ApplicationController
   def destroy
     @booking = Booking.find(params[:id])
     @booking.destroy
+    redirect_to dashboard_path
   end
 
   private
