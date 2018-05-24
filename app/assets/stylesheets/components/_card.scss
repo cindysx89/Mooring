@@ -7,8 +7,18 @@ div.card {
   padding: 10px;
   background-color: white;
   width: 250px;
-  margin: 0 auto;
+  margin: 10px auto;
   display: inline-block;
+}
+
+div.card a {
+  font-weight: lighter
+}
+
+div.card a:hover {
+  color: red;
+  text-decoration: none;
+  transition: all .5s ease-in-out;
 }
 
 .card-img-top {
@@ -17,10 +27,12 @@ div.card {
 }
 
 .card-body {
-  margin: -40px 0 0 10px;
+  margin: -40px 0 0 30px;
+  text-align: left;
   color: #f9f9f9;
 }
 
 p.card-text {
   color: black;
+  font-weight: lighter;
 }
