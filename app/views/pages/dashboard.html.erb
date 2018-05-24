@@ -1,23 +1,36 @@
 <div class="container">
 
+  <div class="about-me">
+    <h4>About Me</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ut nesciunt, debitis dolore accusamus assumenda praesentium neque? Tempora explicabo consequatur adipisci, temporibus maxime rerum et aliquid, necessitatibus possimus voluptas, esse.</p>
+  </div>
+
+  <div class="right-side">
     <h2>My Bookings</h2>
-    <div class="booking-content">
-      <% @bookings.each do |booking| %>
-      <p><%= booking.mooring.location %></p>
-      <p>Booking from <%= booking.start_date %> until <%= booking.end_date %>
-      </p>
+      <div class="booking-content">
+        <% @bookings.each do |booking| %>
+          <div class="mini-card">
+            <p><%= booking.mooring.location %></p>
+            <p>Booking from <%= booking.start_date %> until <%= booking.end_date %>
+            </p>
+            <%= link_to "delete", booking_path(booking), method: :delete %>
+          </div>
+        <% end %>
+      </div>
 
-      <%= link_to "delete", booking_path(booking), method: :delete %>
-
-      <% end %>
+    <h2>My Moorings</h2>
+       <div class="mooring-content">
+        <% @moorings.each do |mooring| %>
+          <div class="mini-card">
+            <p><%= mooring.location %>
+            <%= mooring.price %>
+            <%= link_to "delete", mooring_path(mooring), method: :delete %>
+            </p>
+          </div>
+        <% end %>
+      </div>
     </div>
 
-
-
-    <div class="about-me">
-      <h4>About Me</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ut nesciunt, debitis dolore accusamus assumenda praesentium neque? Tempora explicabo consequatur adipisci, temporibus maxime rerum et aliquid, necessitatibus possimus voluptas, esse.</p>
-    </div>
 
 
 </div>
