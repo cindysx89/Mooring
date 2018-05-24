@@ -11,19 +11,11 @@ h1, h3 {
   color: black;
 }
 
-.banner2 {
-  background-image: image-url("nathan-riley-288990-unsplash.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: calc(100vh - 70px);
-  width: 100vw;
-  overflow: hidden;
-  opacity: 0.2;
+div.new-mooring h1 {
+  font-size: 60px;
 }
 
-div.new-mooring {
-  opacity: 1;
-  z-index: 2;
+#mooring-listings {
+  width: 800px;
+  display: block;
 }
