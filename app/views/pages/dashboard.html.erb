@@ -1,8 +1,8 @@
 <div class="dashboard-container">
 
   <div class="about-me">
-    <h4>About Me</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ut nesciunt, debitis dolore accusamus assumenda praesentium neque? Tempora explicabo consequatur adipisci, temporibus maxime rerum et aliquid, necessitatibus possimus voluptas, esse.</p>
+    <h4>Mr Monopoly</h4>
+    <p>Mascot of the classic Monopoly game. Owns Park Lane, Piccadilly Circus but for here, he owns a lot of mooring spots for some reason. Likes top hats, capitalism and keeping his white moustache in the best condition.</p>
   </div>
 
   <div class="right-side">
@@ -10,8 +10,8 @@
       <div class="booking-content">
         <% @bookings.each do |booking| %>
           <div class="mini-card">
-            <p><%= booking.mooring.location %></p>
-            <p>Booking from <%= booking.start_date.strftime("%d/%m/%Y") %> until <%= booking.end_date.strftime("%d/%m/%Y") %>
+            <p id="bold"><%= booking.mooring.location %></p>
+            <p>Booking from <b><%= booking.start_date.strftime("%-d %B %Y") %></b> until <b><%= booking.end_date.strftime("%-d %B %Y") %></b>
             </p>
 
             <%= link_to "delete", booking_path(booking), method: :delete, class: "btn btn-danger"%>
@@ -23,8 +23,8 @@
        <div class="mooring-content">
         <% @moorings.each do |mooring| %>
           <div class="mini-card">
-            <p><%= mooring.location %></p>
-            <p><%= mooring.price %></p>
+            <p id="bold"><%= mooring.location %></p>
+            <p>£<%= mooring.price %></p>
             <%= link_to "delete", mooring_path(mooring), method: :delete, class: "btn btn-danger" %>
           </div>
         <% end %>
