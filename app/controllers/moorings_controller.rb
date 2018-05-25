@@ -34,7 +34,7 @@ class MooringsController < ApplicationController
 private
 
 def mooring_params
-  params.require(:mooring).permit(:location, :price)
+  params.require(:mooring).permit(:location, :price, :photo)
 end
 
 end
