@@ -27,10 +27,15 @@
 
 .about-me {
   background-color: pink;
-  width: 35%;
-  height: calc(100vh - 70px);
+  width: 30%;
+  margin: auto 10px;
+  height: 100vh;
   // grid-row: 1 / span 2;
   // grid-column: 1 / span 1;
+}
+
+.about-me p {
+  font-weight: lighter;
 }
 
 .mini-card {

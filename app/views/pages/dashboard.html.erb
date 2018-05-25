@@ -11,7 +11,7 @@
         <% @bookings.each do |booking| %>
           <div class="mini-card">
             <p><%= booking.mooring.location %></p>
-            <p>Booking from <%= booking.start_date %> until <%= booking.end_date %>
+            <p>Booking from <%= booking.start_date.strftime("%d/%m/%Y") %> until <%= booking.end_date.strftime("%d/%m/%Y") %>
             </p>
 
             <%= link_to "delete", booking_path(booking), method: :delete, class: "btn btn-danger"%>
