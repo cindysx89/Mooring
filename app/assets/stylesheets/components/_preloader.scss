@@ -9,8 +9,7 @@ $colors : (
 );
 
 ferry {
-  position: absolute;
-  top: 50%;
+  margin-top: 50px;
   transform: translateY(-50%);
   display: inline-block;
   width: 64px;
