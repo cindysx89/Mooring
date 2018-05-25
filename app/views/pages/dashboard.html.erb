@@ -24,7 +24,7 @@
         <% @moorings.each do |mooring| %>
           <div class="mini-card">
             <p id="bold"><%= mooring.location %></p>
-            <p>£<%= mooring.price %></p>
+            <p><%= mooring.price %></p>
             <%= link_to "delete", mooring_path(mooring), method: :delete, class: "btn btn-danger" %>
           </div>
         <% end %>
