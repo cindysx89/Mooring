@@ -8,8 +8,7 @@
   </div>
 
   <div class="mooring-image">
-    <img src="http://tripstylist.co.uk/wp-content/uploads/2013/07/2013-05-04-16.08.12.jpg">
-  </div>
+    <%= cl_image_tag @mooring.photo, height: 300, width: 400, crop: :fill %>
   </div>
 
   <div id="date-booker" class="form-wrapper">
@@ -19,4 +18,5 @@
     <br>
     <%= f.button :submit, "Submit", class: "btn btn-danger", id: "ferry" %>
     <% end %>
+  </div>
 </div>
